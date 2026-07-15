@@ -1,0 +1,18 @@
+{
+  "name": "yash-padaliya-portfolio",
+  "version": "1.0.0",
+  "description": "Resume portfolio website for Yash Padaliya",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx browser-sync start --server --files \"*.html, *.css, *.js\""
+  },
+  "keywords": [
+    "portfolio",
+    "resume",
+    "yash",
+    "padaliya",
+    "mca"
+  ],
+  "author": "Yash Padaliya",
+  "license": "ISC"
+}

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Padaliya | MCA & Backend Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Yash Padaliya, MCA student and Backend Developer specializing in Laravel, PHP, Python, FastAPI, and Database Design.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        Yash P.
+        <span>MCA</span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">
+          <!-- Sun Icon (for light mode toggle) -->
+          <svg class="sun-icon" viewBox="0 0 24 24">
+            <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+          </svg>
+          <!-- Moon Icon (for dark mode toggle) -->
+          <svg class="moon-icon" viewBox="0 0 24 24">
+            <path d="M12.3 22h-.1c-5.4 0-10-4.6-10-10 0-4.3 2.9-8.1 7.1-9.3.5-.1 1 .1 1.3.5.3.4.3.9 0 1.3-1.2 1.5-1.8 3.3-1.8 5.3 0 4.7 3.8 8.5 8.5 8.5 2 0 3.8-.6 5.2-1.8.4-.3.9-.3 1.3 0 .4.3.6.8.5 1.3-1.1 4.2-4.9 7.2-9.3 7.2z"/>
+          </svg>
+        </button>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open mobile menu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       MAIN CONTENT
+       ========================================== -->
+  <main>
+    
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-subtitle">
+            <span class="hero-subtitle-dot"></span>
+            Available for Opportunities
+          </span>
+          <h1 class="hero-title">
+            Hi, I'm <span>Yash Padaliya</span>
+          </h1>
+          <div class="hero-typing">
+            I am a&nbsp;<span id="typing-text"></span><span class="typing-cursor">|</span>
+          </div>
+          <p class="hero-desc">
+            A results-driven MCA student specializing in robust backend technologies like Laravel/PHP and FastAPI/Python. I design efficient relational databases, build highly modular REST APIs, and develop practical business solutions.
+          </p>
+          <div class="hero-btns">
+            <a href="assets/Yash_Padaliya_Resume.pdf" download="Yash_Padaliya_Resume.pdf" class="glow-btn">
+              Download Resume
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+            </a>
+            <a href="#contact" class="secondary-btn">
+              Get In Touch
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-art-container">
+          <div class="hero-art-glow"></div>
+          <div class="hero-art">
+            <div class="hero-art-img-wrapper">
+              <!-- Inline Developer SVG Illustration -->
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="35" r="18" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M25 78 C25 60, 35 55, 50 55 C65 55, 75 60, 75 78" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M15 25 L30 25" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3,2"/>
+                <path d="M70 25 L85 25" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3,2"/>
+                <circle cx="20" cy="50" r="3" fill="currentColor"/>
+                <circle cx="80" cy="50" r="3" fill="currentColor"/>
+              </svg>
+            </div>
+            
+            <!-- Floating Badges -->
+            <div class="floating-badge fb-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <div>
+                <span>Backend Dev</span>
+                <p>FastAPI / Laravel</p>
+              </div>
+            </div>
+            
+            <div class="floating-badge fb-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+              </svg>
+              <div>
+                <span>Databases</span>
+                <p>MySQL / Postgres</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT SECTION
+         ========================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-img-container">
+            <div class="about-img-frame">
+              <svg viewBox="0 0 100 100">
+                <rect x="20" y="20" width="60" height="60" rx="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M35 40 L45 50 L35 60" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="50" y1="60" x2="65" y2="60" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="about-img-decor"></div>
+          </div>
+          
+          <div class="about-details">
+            <h3>I build robust backend systems.</h3>
+            <p class="about-text">
+              I am an MCA (Master of Computer Applications) student at Indus University. Dedicated to backend development, database management, and architecture design. I love taking complex, logical problems and translating them into clean, modular, and high-performance REST APIs. I enjoy designing normalized database schemas and applying OOP principles.
+            </p>
+            
+            <div class="about-info-grid">
+              <div class="about-info-item">
+                <span>Location</span>
+                <p>Ahmedabad, India (380058)</p>
+              </div>
+              <div class="about-info-item">
+                <span>Email</span>
+                <p><a href="mailto:yashpadaliya2@gmail.com">yashpadaliya2@gmail.com</a></p>
+              </div>
+              <div class="about-info-item">
+                <span>Education</span>
+                <p>MCA (Pursuing)</p>
+              </div>
+              <div class="about-info-item">
+                <span>GitHub</span>
+                <p><a href="https://github.com/yashpadaliya08" target="_blank">yashpadaliya08</a></p>
+              </div>
+            </div>
+            
+            <div class="about-languages">
+              <p>Soft Skills & Traits:</p>
+              <div class="language-pills" style="margin-bottom: 1.5rem;">
+                <span class="lang-pill">Problem Solving</span>
+                <span class="lang-pill">Analytical Thinking</span>
+                <span class="lang-pill">Team Collaboration</span>
+                <span class="lang-pill">Adaptability</span>
+                <span class="lang-pill">Quick Learner</span>
+              </div>
+              
+              <p>Languages Spoken:</p>
+              <div class="language-pills">
+                <span class="lang-pill">English</span>
+                <span class="lang-pill">Hindi</span>
+                <span class="lang-pill">Gujarati</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SKILLS SECTION
+         ========================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">My Capabilities</span>
+          <h2 class="section-title">Technical Skills</h2>
+        </div>
+        
+        <!-- Skill categories grid -->
+        <div class="skills-grid">
+          <!-- Languages Card -->
+          <div class="skills-category-card glass-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                </svg>
+              </div>
+              <h3 class="skills-category-title">Languages</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>PHP</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Python</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>JavaScript</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>HTML5 / CSS3</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Frameworks & APIs Card -->
+          <div class="skills-category-card glass-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="skills-category-title">Frameworks & APIs</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Laravel (PHP)</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="88"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>FastAPI (Python)</span>
+                  <span>82%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="82"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>REST APIs Design</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Bootstrap</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Databases & Tools Card -->
+          <div class="skills-category-card glass-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                </svg>
+              </div>
+              <h3 class="skills-category-title">Databases & Tools</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>MySQL</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>PostgreSQL</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>GitHub & Git</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Swagger / VS Code</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Coding Tools Card -->
+          <div class="skills-category-card glass-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon">
+                <!-- Sparkles AI Icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+              </div>
+              <h3 class="skills-category-title">AI Coding Tools</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>GitHub Copilot</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="95"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Cursor / AI Editors</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>ChatGPT / Prompting</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-width="90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Core Concepts Badge cloud -->
+        <div class="about-languages" style="margin-top: 4rem; text-align: center;">
+          <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">Core Design Concepts & Methodology:</p>
+          <div class="language-pills" style="justify-content: center;">
+            <span class="lang-pill" style="border-color: var(--accent-primary)">OOP (Object Oriented Programming)</span>
+            <span class="lang-pill" style="border-color: var(--accent-primary)">MVC (Model-View-Controller)</span>
+            <span class="lang-pill" style="border-color: var(--accent-primary)">Database Schema Design</span>
+            <span class="lang-pill" style="border-color: var(--accent-primary)">CRUD Systems</span>
+            <span class="lang-pill" style="border-color: var(--accent-primary)">API Documentation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECTS SECTION
+         ========================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Selected Work</span>
+          <h2 class="section-title">My Projects</h2>
+        </div>
+        
+        <!-- Category Filter Buttons -->
+        <div class="projects-filter">
+          <button class="projects-filter-btn active" data-filter="all">All Projects</button>
+          <button class="projects-filter-btn" data-filter="laravel-php">Laravel / PHP</button>
+          <button class="projects-filter-btn" data-filter="python-fastapi">Python / FastAPI</button>
+        </div>
+        
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: ERP Leave Management System -->
+          <div class="project-card glass-card" data-category="python-fastapi">
+            <div class="project-header-visual">
+              <div class="project-header-decor"></div>
+              <div class="project-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+            </div>
+            
+            <div class="project-content">
+              <h3 class="project-title">ERP Leave Management System</h3>
+              <p class="project-desc">
+                Developed modular backend services and secure REST APIs for employee leave management. Designed complex relational database schemas for tracking leave balances, approval workflows, and leave history. Built following REST principles and OOP patterns.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2: CoreInventory IMS -->
+          <div class="project-card glass-card" data-category="laravel-php">
+            <div class="project-header-visual">
+              <div class="project-header-decor"></div>
+              <div class="project-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+            </div>
+            
+            <div class="project-content">
+              <h3 class="project-title">CoreInventory IMS</h3>
+              <p class="project-desc">
+                Created inventory and stock management modules using Laravel. Engineered clean relational database structures for tracking stocks, suppliers, and items. Built fully responsive management layouts for seamless daily stock adjustments and dashboard reporting.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">MVC Design</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3: SmartHR -->
+          <div class="project-card glass-card" data-category="laravel-php">
+            <div class="project-header-visual">
+              <div class="project-header-decor"></div>
+              <div class="project-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+            </div>
+            
+            <div class="project-content">
+              <h3 class="project-title">SmartHR</h3>
+              <p class="project-desc">
+                Developed employee profiles, structural hierarchy, and human resources administration modules in Laravel. Designed CRUD operations, secure route controllers, and clean SQL database integrations while practicing full Model-View-Controller design patterns.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">CRUD</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: SwiftRide -->
+          <div class="project-card glass-card" data-category="laravel-php">
+            <div class="project-header-visual">
+              <div class="project-header-decor"></div>
+              <div class="project-icon-wrapper">
+                <!-- Car icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path>
+                  <circle cx="7" cy="17" r="3"></circle>
+                  <circle cx="15" cy="17" r="3"></circle>
+                </svg>
+              </div>
+            </div>
+            
+            <div class="project-content">
+              <h3 class="project-title">SwiftRide</h3>
+              <p class="project-desc">
+                Developed a full-featured car rental and booking web application in Laravel. Designed responsive booking interfaces, customer trip request validation flows, and a clean MySQL database schema for tracking active bookings and vehicle fleet availability.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Blade Templates</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: AITOS -->
+          <div class="project-card glass-card" data-category="laravel-php">
+            <div class="project-header-visual">
+              <div class="project-header-decor"></div>
+              <div class="project-icon-wrapper">
+                <!-- Hub/Automation icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+            </div>
+            
+            <div class="project-content">
+              <h3 class="project-title">AITOS</h3>
+              <p class="project-desc">
+                Built an administrative portal and business utility platform with Laravel. Created customizable management panels, secure user access flows, and optimized data workflows to streamline business operations and report generation.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">Blade</span>
+                <span class="tech-tag">MVC Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EDUCATION & CERTIFICATIONS SECTION
+         ========================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+        
+        <!-- Timeline -->
+        <div class="education-container">
+          <!-- MCA -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 20 20"><path d="M10 .25L0 5.75l10 5.5 8.125-4.47V14.5c0 .275.225.5.5.5s.5-.225.5-.5V6.23L20 5.75 10 .25z M16.25 8.947V13.5c0 1.93-2.8 3.5-6.25 3.5s-6.25-1.57-6.25-3.5V8.947L10 12.36l6.25-3.413z"/></svg>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-title">MCA (Master of Computer Applications)</h3>
+                  <div class="timeline-institution">Indus University</div>
+                </div>
+                <div class="timeline-date">2025 – Pursuing</div>
+              </div>
+              <p class="timeline-score">SGPA achieved so far: <span>8.90 / 10.00</span></p>
+            </div>
+          </div>
+          
+          <!-- BCA -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 20 20"><path d="M10 .25L0 5.75l10 5.5 8.125-4.47V14.5c0 .275.225.5.5.5s.5-.225.5-.5V6.23L20 5.75 10 .25z M16.25 8.947V13.5c0 1.93-2.8 3.5-6.25 3.5s-6.25-1.57-6.25-3.5V8.947L10 12.36l6.25-3.413z"/></svg>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-title">BCA (Bachelor of Computer Applications)</h3>
+                  <div class="timeline-institution">T N Rao College (Saurashtra University)</div>
+                </div>
+                <div class="timeline-date">2022 – 2025</div>
+              </div>
+              <p class="timeline-score">Graduated with: <span>77.97% (First Class Distinction)</span></p>
+            </div>
+          </div>
+          
+          <!-- HSC -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 20 20"><path d="M10 .25L0 5.75l10 5.5 8.125-4.47V14.5c0 .275.225.5.5.5s.5-.225.5-.5V6.23L20 5.75 10 .25z M16.25 8.947V13.5c0 1.93-2.8 3.5-6.25 3.5s-6.25-1.57-6.25-3.5V8.947L10 12.36l6.25-3.413z"/></svg>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-title">HSC (Higher Secondary Certificate)</h3>
+                  <div class="timeline-institution">Gujarat State Education Board</div>
+                </div>
+                <div class="timeline-date">2021 – 2022</div>
+              </div>
+              <p class="timeline-score">Score achieved: <span>79.42%</span></p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Certifications sub-block -->
+        <div class="certifications-divider">
+          <h3>Certifications</h3>
+        </div>
+        
+        <div class="certifications-grid">
+          <div class="cert-card glass-card">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <h4>HTML Certification</h4>
+              <p>Issued by Sololearn</p>
+            </div>
+          </div>
+          
+          <div class="cert-card glass-card">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <h4>CSS Certification</h4>
+              <p>Issued by Sololearn</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+        
+        <div class="contact-grid">
+          <!-- Info list -->
+          <div class="contact-info-panel glass-card">
+            <div>
+              <h3 class="contact-info-title">Let's connect</h3>
+              <p class="contact-info-desc">Feel free to reach out to me for project collaborations, job openings, or just to say hello.</p>
+            </div>
+            
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <span>Email Me</span>
+                  <p><a href="mailto:yashpadaliya2@gmail.com">yashpadaliya2@gmail.com</a></p>
+                </div>
+              </div>
+
+              
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <span>Find Me</span>
+                  <p>Ahmedabad, Gujarat, India</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-socials">
+              <a href="https://linkedin.com/in/padaliya-yash" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="https://github.com/yashpadaliya08" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Message Form -->
+          <div class="contact-form-panel glass-card">
+            <h3 class="form-title">Send Me A Message</h3>
+            
+            <div id="form-status" class="form-status"></div>
+            
+            <form id="contact-form" novalidate>
+              <div class="form-grid">
+                <div class="form-group" id="name-group">
+                  <label for="form-name">Full Name</label>
+                  <div class="input-wrapper">
+                    <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe">
+                  </div>
+                  <span class="error-message">Please enter your name</span>
+                </div>
+                
+                <div class="form-group" id="email-group">
+                  <label for="form-email">Email Address</label>
+                  <div class="input-wrapper">
+                    <input type="email" id="form-email" class="form-input" placeholder="e.g. john@example.com">
+                  </div>
+                  <span class="error-message">Please enter a valid email address</span>
+                </div>
+              </div>
+              
+              <div class="form-group full-width" style="margin-bottom: 1.5rem;">
+                <label for="form-subject">Subject</label>
+                <div class="input-wrapper">
+                  <input type="text" id="form-subject" class="form-input" placeholder="How can I help you?">
+                </div>
+              </div>
+              
+              <div class="form-group full-width" id="message-group" style="margin-bottom: 2.5rem;">
+                <label for="form-message">Message</label>
+                <div class="input-wrapper">
+                  <textarea id="form-message" class="form-textarea" placeholder="Write your message here..."></textarea>
+                </div>
+                <span class="error-message">Please enter your message</span>
+              </div>
+              
+              <button type="submit" class="glow-btn" style="width: 100%; justify-content: center;">
+                Send Message
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <a href="#home" class="footer-logo">Yash Padaliya</a>
+      <p class="footer-text">&copy; 2026 Yash Padaliya. All rights reserved.</p>
+      
+      <button id="back-to-top" class="back-to-top" aria-label="Scroll to top" style="opacity: 0; pointer-events: none; transform: translateY(15px);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+
+
+  <!-- Interactivity JS -->
+  <script src="script.js"></script>
+</body>
+</html>

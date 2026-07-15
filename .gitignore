@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+
+# OS metadata files
+.DS_Store
+Thumbs.db
+
+# Gemini/IDE directories
+.gemini/
+
+Yash_Padaliya_Resume.pdf
