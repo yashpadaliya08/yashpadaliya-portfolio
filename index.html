@@ -52,6 +52,8 @@
 
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Iconify Icons CDN -->
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 </head>
 <body>
 
@@ -257,225 +259,162 @@
       <div class="container">
         <div class="section-header">
           <span class="section-subtitle">My Capabilities</span>
-          <h2 class="section-title">Technical Skills</h2>
+          <h2 class="section-title">Technologies & Stack</h2>
+        </div>
+
+        <!-- Skills Category Filters -->
+        <div class="skills-filter">
+          <button class="skills-filter-btn active" data-filter="all">All Stack</button>
+          <button class="skills-filter-btn" data-filter="frontend">Frontend</button>
+          <button class="skills-filter-btn" data-filter="backend">Backend</button>
+          <button class="skills-filter-btn" data-filter="database">Databases</button>
+          <button class="skills-filter-btn" data-filter="tools">Tools & AI</button>
         </div>
         
-        <!-- Skill categories grid -->
-        <div class="skills-grid">
-          <!-- Languages Card -->
-          <div class="skills-category-card glass-card">
-            <div class="skills-category-header">
-              <div class="skills-category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                </svg>
-              </div>
-              <h3 class="skills-category-title">Languages</h3>
+        <!-- Single, unified skills grid showing all logos -->
+        <div class="skills-unified-grid">
+          <!-- Python -->
+          <div class="skill-badge" data-tech="python" data-category="backend">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:python"></iconify-icon>
             </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>PHP</span>
-                  <span>90%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="90"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Python</span>
-                  <span>85%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="85"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>JavaScript</span>
-                  <span>75%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="75"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>HTML5 / CSS3</span>
-                  <span>90%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="90"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Frameworks & APIs Card -->
-          <div class="skills-category-card glass-card">
-            <div class="skills-category-header">
-              <div class="skills-category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                  <polyline points="2 17 12 22 22 17"></polyline>
-                  <polyline points="2 12 12 17 22 12"></polyline>
-                </svg>
-              </div>
-              <h3 class="skills-category-title">Frameworks & APIs</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Laravel (PHP)</span>
-                  <span>88%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="88"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>FastAPI (Python)</span>
-                  <span>82%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="82"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>REST APIs Design</span>
-                  <span>90%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="90"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Bootstrap</span>
-                  <span>85%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="85"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Databases & Tools Card -->
-          <div class="skills-category-card glass-card">
-            <div class="skills-category-header">
-              <div class="skills-category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                  <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
-                </svg>
-              </div>
-              <h3 class="skills-category-title">Databases & Tools</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>MySQL</span>
-                  <span>85%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="85"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>SQLite</span>
-                  <span>80%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="80"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>GitHub & Git</span>
-                  <span>85%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="85"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Swagger / VS Code</span>
-                  <span>90%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="90"></div>
-                </div>
-              </div>
-            </div>
+            <span class="skill-name">Python</span>
           </div>
 
-          <!-- AI Coding Tools Card -->
-          <div class="skills-category-card glass-card">
-            <div class="skills-category-header">
-              <div class="skills-category-icon">
-                <!-- Sparkles AI Icon -->
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                </svg>
-              </div>
-              <h3 class="skills-category-title">AI Coding Tools</h3>
+          <!-- PHP -->
+          <div class="skill-badge" data-tech="php" data-category="backend">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:php"></iconify-icon>
             </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>GitHub Copilot</span>
-                  <span>95%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="95"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta" style="flex-wrap: wrap;">
-                  <span>Claude</span>
-                  <span>90%</span>
-                  <span style="font-size: 0.75rem; color: var(--text-muted); width: 100%; margin-top: 0.15rem; font-weight: normal; font-family: var(--font-sans);">(backend: API/service design, debugging, scaffolding)</span>
-                </div>
-                <div class="skill-progress-bg" style="margin-top: 0.25rem;">
-                  <div class="skill-progress-bar" data-width="90"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta" style="flex-wrap: wrap;">
-                  <span>Antigravity (Gemini)</span>
-                  <span>85%</span>
-                  <span style="font-size: 0.75rem; color: var(--text-muted); width: 100%; margin-top: 0.15rem; font-weight: normal; font-family: var(--font-sans);">(frontend scaffolding, UI components)</span>
-                </div>
-                <div class="skill-progress-bg" style="margin-top: 0.25rem;">
-                  <div class="skill-progress-bar" data-width="85"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Cursor / AI Editors</span>
-                  <span>90%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="90"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>ChatGPT / Prompting</span>
-                  <span>90%</span>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-bar" data-width="90"></div>
-                </div>
-              </div>
+            <span class="skill-name">PHP</span>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-badge" data-tech="javascript" data-category="frontend">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:javascript"></iconify-icon>
             </div>
+            <span class="skill-name">JavaScript</span>
+          </div>
+
+          <!-- HTML5 -->
+          <div class="skill-badge" data-tech="html-css" data-category="frontend">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:html-5"></iconify-icon>
+            </div>
+            <span class="skill-name">HTML5</span>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="skill-badge" data-tech="css3" data-category="frontend">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:css-3"></iconify-icon>
+            </div>
+            <span class="skill-name">CSS3</span>
+          </div>
+
+          <!-- Laravel -->
+          <div class="skill-badge" data-tech="laravel" data-category="backend">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:laravel"></iconify-icon>
+            </div>
+            <span class="skill-name">Laravel</span>
+          </div>
+
+          <!-- FastAPI -->
+          <div class="skill-badge" data-tech="fastapi" data-category="backend">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:fastapi"></iconify-icon>
+            </div>
+            <span class="skill-name">FastAPI</span>
+          </div>
+
+          <!-- REST APIs -->
+          <div class="skill-badge" data-tech="restapi" data-category="backend">
+            <div class="skill-icon">
+              <img src="https://img.icons8.com/?size=100&id=UR9WNLMA7zim&format=png&color=00F2FE" alt="REST API" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <span class="skill-name">REST APIs</span>
+          </div>
+
+          <!-- Bootstrap -->
+          <div class="skill-badge" data-tech="bootstrap" data-category="frontend">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:bootstrap"></iconify-icon>
+            </div>
+            <span class="skill-name">Bootstrap</span>
+          </div>
+
+          <!-- MySQL -->
+          <div class="skill-badge" data-tech="mysql" data-category="database">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:mysql"></iconify-icon>
+            </div>
+            <span class="skill-name">MySQL</span>
+          </div>
+
+          <!-- SQLite -->
+          <div class="skill-badge" data-tech="sqlite" data-category="database">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:sqlite"></iconify-icon>
+            </div>
+            <span class="skill-name">SQLite</span>
+          </div>
+
+          <!-- Git & GitHub -->
+          <div class="skill-badge" data-tech="git" data-category="tools">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:git-icon"></iconify-icon>
+            </div>
+            <span class="skill-name">Git & GitHub</span>
+          </div>
+
+          <!-- VS Code -->
+          <div class="skill-badge" data-tech="vscode" data-category="tools">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:visual-studio-code"></iconify-icon>
+            </div>
+            <span class="skill-name">VS Code</span>
+          </div>
+
+          <!-- GitHub Copilot -->
+          <div class="skill-badge" data-tech="copilot" data-category="tools">
+            <div class="skill-icon">
+              <iconify-icon icon="simple-icons:githubcopilot" style="color: #8b5cf6;"></iconify-icon>
+            </div>
+            <span class="skill-name">GitHub Copilot</span>
+          </div>
+
+          <!-- Claude AI -->
+          <div class="skill-badge" data-tech="claude" data-category="tools">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:claude"></iconify-icon>
+            </div>
+            <span class="skill-name">Claude AI</span>
+          </div>
+
+          <!-- Gemini -->
+          <div class="skill-badge" data-tech="gemini" data-category="tools">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:google-gemini"></iconify-icon>
+            </div>
+            <span class="skill-name">Gemini</span>
+          </div>
+
+          <!-- Cursor -->
+          <div class="skill-badge" data-tech="cursor" data-category="tools">
+            <div class="skill-icon">
+              <iconify-icon icon="simple-icons:cursor" style="color: #00e5ff;"></iconify-icon>
+            </div>
+            <span class="skill-name">Cursor</span>
+          </div>
+
+          <!-- ChatGPT -->
+          <div class="skill-badge" data-tech="chatgpt" data-category="tools">
+            <div class="skill-icon">
+              <iconify-icon icon="logos:openai-icon"></iconify-icon>
+            </div>
+            <span class="skill-name">ChatGPT</span>
           </div>
         </div>
         

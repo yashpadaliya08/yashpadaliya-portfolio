@@ -848,63 +848,202 @@ button, input, textarea {
   font-weight: 700;
 }
 
-.skills-list {
+/* Skills Category Filters */
+.skills-filter {
   display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.skill-meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.skill-progress-bg {
-  width: 100%;
-  height: 6px;
-  background: var(--border-color);
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.skill-progress-bar {
-  height: 100%;
-  background: var(--accent-gradient);
-  border-radius: 3px;
-  width: 0; /* Animated with scroll */
-  transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.skills-list-grid {
-  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
   flex-wrap: wrap;
-  gap: 0.75rem;
 }
 
-.skill-chip {
-  padding: 0.5rem 1rem;
-  border-radius: var(--border-radius-sm);
-  border: 1px solid var(--border-color);
-  background: var(--surface-color);
-  font-size: 0.88rem;
+.skills-filter-btn {
+  padding: 0.65rem 1.35rem;
   font-weight: 600;
+  font-size: 0.88rem;
+  border-radius: var(--border-radius-xl);
+  border: 1px solid var(--border-color);
+  background: var(--surface-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.skills-filter-btn:hover {
+  border-color: var(--accent-primary);
+  color: var(--text-primary);
+}
+
+.skills-filter-btn.active {
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+/* Unified Tech Badge Grid - Modern borderless grid styled like screenshot */
+.skills-unified-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 3rem 1.5rem;
+  max-width: 1000px;
+  margin: 2rem auto 0 auto;
+  justify-items: center;
+}
+
+/* Individual Tech Badge */
+.skill-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 0.5rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  width: 100%;
+}
+
+.skill-icon {
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 0.85rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.skill-chip svg {
-  width: 16px;
-  height: 16px;
-  color: var(--accent-primary);
+.skill-icon svg,
+.skill-icon iconify-icon {
+  width: 100%;
+  height: 100%;
+  font-size: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+/* Tech-specific Hover Scale and Glowing Drop Shadows */
+.skill-badge:hover {
+  transform: translateY(-6px);
+}
+
+.skill-badge:hover .skill-name {
+  color: var(--text-primary);
+}
+
+/* Tech-specific Brand Glow on Hover */
+.skill-badge[data-tech="php"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(119, 123, 179, 0.75));
+}
+
+.skill-badge[data-tech="python"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(55, 118, 171, 0.75));
+}
+
+.skill-badge[data-tech="javascript"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(247, 223, 30, 0.75));
+}
+
+.skill-badge[data-tech="html-css"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(227, 79, 38, 0.75));
+}
+
+.skill-badge[data-tech="css3"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(33, 150, 243, 0.75));
+}
+
+.skill-badge[data-tech="laravel"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(255, 45, 32, 0.75));
+}
+
+.skill-badge[data-tech="fastapi"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(0, 150, 136, 0.75));
+}
+
+.skill-badge[data-tech="restapi"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(0, 242, 254, 0.75));
+}
+
+.skill-badge[data-tech="bootstrap"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(121, 82, 179, 0.75));
+}
+
+.skill-badge[data-tech="mysql"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(0, 117, 143, 0.75));
+}
+
+.skill-badge[data-tech="sqlite"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(15, 128, 204, 0.75));
+}
+
+.skill-badge[data-tech="git"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(240, 80, 50, 0.75));
+}
+
+.skill-badge[data-tech="vscode"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(0, 122, 204, 0.75));
+}
+
+.skill-badge[data-tech="copilot"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.75));
+}
+
+.skill-badge[data-tech="claude"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(217, 119, 6, 0.75));
+}
+
+.skill-badge[data-tech="gemini"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(157, 78, 221, 0.75));
+}
+
+.skill-badge[data-tech="cursor"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(0, 229, 255, 0.75));
+}
+
+.skill-badge[data-tech="chatgpt"]:hover .skill-icon {
+  filter: drop-shadow(0 0 15px rgba(16, 163, 127, 0.75));
+}
+
+/* Responsive Columns */
+@media (max-width: 992px) {
+  .skills-unified-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-unified-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1rem;
+  }
+  
+  .skill-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 0.65rem;
+  }
+  
+  .skill-icon iconify-icon {
+    font-size: 44px;
+  }
+  
+  .skill-name {
+    font-size: 0.85rem;
+  }
 }
 
 /* ==========================================

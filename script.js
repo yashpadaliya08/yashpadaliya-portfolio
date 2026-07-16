@@ -142,10 +142,16 @@ document.addEventListener('DOMContentLoaded', () => {
       projectCards.forEach(card => {
         const category = card.getAttribute('data-category');
         
+        // Clear any existing timeout for this card to prevent race conditions
+        if (card.timeoutId) {
+          clearTimeout(card.timeoutId);
+          card.timeoutId = null;
+        }
+        
         if (filterValue === 'all' || category === filterValue) {
           // Show card
           card.style.display = 'flex';
-          setTimeout(() => {
+          card.timeoutId = setTimeout(() => {
             card.style.opacity = '1';
             card.style.transform = 'scale(1) translateY(0)';
           }, 50);
@@ -153,8 +159,52 @@ document.addEventListener('DOMContentLoaded', () => {
           // Hide card
           card.style.opacity = '0';
           card.style.transform = 'scale(0.9) translateY(10px)';
-          setTimeout(() => {
+          card.timeoutId = setTimeout(() => {
             card.style.display = 'none';
+            card.timeoutId = null;
+          }, 300);
+        }
+      });
+    });
+  });
+
+  /* ==========================================
+     SKILLS FILTERING
+     ========================================== */
+  const skillsFilterBtns = document.querySelectorAll('.skills-filter-btn');
+  const skillBadges = document.querySelectorAll('.skill-badge');
+  
+  skillsFilterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Set active button
+      skillsFilterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      const filterValue = btn.getAttribute('data-filter');
+      
+      skillBadges.forEach(badge => {
+        const category = badge.getAttribute('data-category');
+        
+        // Clear any existing timeout for this badge to prevent race conditions
+        if (badge.timeoutId) {
+          clearTimeout(badge.timeoutId);
+          badge.timeoutId = null;
+        }
+        
+        if (filterValue === 'all' || category === filterValue) {
+          // Show badge
+          badge.style.display = 'flex';
+          badge.timeoutId = setTimeout(() => {
+            badge.style.opacity = '1';
+            badge.style.transform = 'scale(1) translateY(0)';
+          }, 50);
+        } else {
+          // Hide badge
+          badge.style.opacity = '0';
+          badge.style.transform = 'scale(0.9) translateY(10px)';
+          badge.timeoutId = setTimeout(() => {
+            badge.style.display = 'none';
+            badge.timeoutId = null;
           }, 300);
         }
       });
@@ -164,23 +214,8 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ==========================================
      INTERSECTION OBSERVER - SCROLL ANIMATIONS
      ========================================== */
-  // 1. Skill Progress Bars Animation
-  const skillBars = document.querySelectorAll('.skill-progress-bar');
   
-  const skillObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const bar = entry.target;
-        const targetWidth = bar.getAttribute('data-width');
-        bar.style.width = `${targetWidth}%`;
-        observer.unobserve(bar); // Stop observing once animated
-      }
-    });
-  }, { threshold: 0.1 });
-  
-  skillBars.forEach(bar => skillObserver.observe(bar));
-
-  // 2. Active Section Navigation Highlighter
+  // 1. Active Section Navigation Highlighter
   const sections = document.querySelectorAll('section');
   
   const navObserver = new IntersectionObserver((entries) => {
@@ -203,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(section => navObserver.observe(section));
 
   // 3. Fade In On Scroll (for sections / cards)
-  const fadeElems = document.querySelectorAll('.glass-card, .timeline-item, .skills-category-card');
+  const fadeElems = document.querySelectorAll('.glass-card, .timeline-item, .skills-category-card, .skills-unified-grid');
   fadeElems.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(25px)';
